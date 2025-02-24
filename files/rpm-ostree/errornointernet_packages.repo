@@ -1,4 +1,3 @@
-
 [copr:copr.fedorainfracloud.org:errornointernet:packages]
 name=Copr repo for packages owned by errornointernet
 baseurl=https://download.copr.fedorainfracloud.org/results/errornointernet/packages/fedora-$releasever-$basearch/
