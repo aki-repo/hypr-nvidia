@@ -46,6 +46,7 @@ modules:
       - nwg-look
       - nu
       - light
+      - waypaper
       
     remove:
       # example: removing firefox (in favor of the flatpak)
