@@ -33,6 +33,8 @@ modules:
       - xwayland-satellite
       - polkit
       - xfce-polkit
+      - NetworkManager-tui
+      - papirus-icon-theme
       #- xdg-desktop-portal-hyprland
       #- hyprlang
       #- hyprlock
