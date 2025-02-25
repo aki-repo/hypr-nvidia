@@ -29,6 +29,7 @@ modules:
       - starship
       - ghostty
       # WM
+      - qtile
       - niri
       - xwayland-satellite
       - polkit
