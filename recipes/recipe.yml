@@ -29,7 +29,7 @@ modules:
       - starship
       - ghostty
       # WM
-      - qtile
+      - xorg-X11-server-Xorg
       - niri
       - xwayland-satellite
       - polkit
