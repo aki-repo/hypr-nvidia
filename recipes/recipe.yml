@@ -48,6 +48,7 @@ modules:
       - light
       - waypaper
       - power-profiles-daemon
+      - thunar
       
     remove:
       # example: removing firefox (in favor of the flatpak)
