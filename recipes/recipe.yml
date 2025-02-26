@@ -34,6 +34,7 @@ modules:
       - NetworkManager-tui
       - papirus-icon-theme
       - xdg-desktop-portal-gnome
+      - hyprland
       #- hyprlang
       #- hyprlock
       #- hyprutils
