@@ -33,7 +33,7 @@ modules:
       - xwayland-satellite
       - NetworkManager-tui
       - papirus-icon-theme
-      - xdg-desktop-portal-hyprland
+      - xdg-desktop-portal-gnome
       #- hyprlang
       #- hyprlock
       #- hyprutils
