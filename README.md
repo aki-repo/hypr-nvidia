@@ -2,7 +2,13 @@
 
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
-After setup, it is recommended you update this README to describe your custom image.
+
+# about
+
+This is my oppinionated ublue build with Niri as a wm. No fluff. Login from cli. Some extra fonts. Ghostty, nu-shell, no stupid bar (I have a watch).
+nmtui for network.
+
+Thanks.
 
 ## Installation
 
