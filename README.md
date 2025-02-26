@@ -6,7 +6,9 @@ See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup i
 # about
 
 This is my oppinionated ublue build with Niri as a wm. No fluff. Login from cli. Some extra fonts. Ghostty, nu-shell, no stupid bar (I have a watch).
-nmtui for network.
+nmtui for network. Yazi.
+
+Install what else you need via brew/flatpak/rpm-ostree. Fork.
 
 Thanks.
 
