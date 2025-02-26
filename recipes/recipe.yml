@@ -29,8 +29,8 @@ modules:
       - starship
       - ghostty
       # WM
-       - niri
-       - xwayland-satellite
+      - niri
+      - xwayland-satellite
       - NetworkManager-tui
       - papirus-icon-theme
       - xdg-desktop-portal-hyprland
