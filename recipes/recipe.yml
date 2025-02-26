@@ -3,7 +3,7 @@
 # image will be published to ghcr.io/<user>/<name>
 name: hypr-nvidia
 # description will be included in the image's metadata
-description: personal image
+description: messing around
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/ublue-os/base-nvidia
@@ -73,10 +73,5 @@ modules:
         - org.mozilla.firefox
      # remove:
       
-  - type: files
-    files:
-        - source: system/hyprland
-          destination: /
-          
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
