@@ -49,6 +49,7 @@ modules:
       - waypaper
       - power-profiles-daemon
       - thunar
+      - tailscale
       
     remove:
       # example: removing firefox (in favor of the flatpak)
