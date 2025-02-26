@@ -47,6 +47,7 @@ modules:
       - nu
       - light
       - waypaper
+      - power-profiles-daemon
       
     remove:
       # example: removing firefox (in favor of the flatpak)
