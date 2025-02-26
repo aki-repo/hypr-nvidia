@@ -6,7 +6,7 @@ name: niri-nvidia
 description: personal image
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/base-nvidia
+base-image: ghcr.io/ublue-os/sericea-nvidia
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -29,11 +29,8 @@ modules:
       - starship
       - ghostty
       # WM
-      - xorg-X11-server
       - niri
       - xwayland-satellite
-      - polkit
-      - xfce-polkit
       - NetworkManager-tui
       - papirus-icon-theme
       #- xdg-desktop-portal-hyprland
@@ -41,11 +38,7 @@ modules:
       #- hyprlock
       #- hyprutils
       #- hypridle
-      - thunar
       - yazi
-      - swaybg
-      - swaylock
-      - dunst
       - nwg-look
       - nu
       - light
@@ -77,7 +70,8 @@ modules:
       # If no repo information is specified, Flathub will be used by default
       install:
         - org.mozilla.firefox
-      # remove:
+     # remove:
+      
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
