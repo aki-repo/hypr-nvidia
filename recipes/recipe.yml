@@ -28,10 +28,23 @@ modules:
       - micro
       - starship
       - ghostty
+
+      # SDDM
+      - sddm
+      - sddm-themes
+      - qt5-qtgraphicaleffects
+      - qt5-qtquickcontrols2
+      - qt5-qtsvg
+      - kwallet
+      - pam-kwallet
+      
       # WM
       - niri
       - xwayland-satellite
-      - NetworkManager-tui
+      - gnome-themes-extra
+      - gnome-icon-theme
+      - paper-icon-theme
+      - breeze-icon-theme 
       - papirus-icon-theme
       - xdg-desktop-portal-hyprland
       - hyprland
@@ -46,11 +59,77 @@ modules:
       - yazi
       - nwg-look
       - nu
-      - light
       - waypaper
-      - power-profiles-daemon
-      - thunar
-      - tailscale
+
+      # display
+        - wlr-randr
+        - wlsunset
+        - light
+        - kanshi
+      
+      # screenshot
+        - slurp
+        - grim
+        
+      # environment
+        - fzf
+        - tuned-ppd
+        - xorg-x11-server-Xwayland
+        - headsetcontrol
+        - mediainfo
+        - polkit
+        - xfce-polkit 
+        - fprintd-pam
+        - xdg-user-dirs
+        - dbus-tools
+        - dbus-daemon
+        - wl-clipboard
+        - pavucontrol
+        - playerctl
+        - qt5-qtwayland
+        - qt6-qtwayland
+        - vulkan-validation-layers
+        - vulkan-tools
+        - gnome-disk-utility
+        - ddcutil
+        - openssl
+        - vim
+        - just
+        - alsa-firmware
+        - p7zip
+        
+      # sound
+        - wireplumber
+        - pipewire
+        - pamixer
+        - pulseaudio-utils
+
+      # file manager
+        - thunar
+        - thunar-archive-plugin 
+        - thunar-volman
+        - xarchiver
+        - imv
+        - p7zip
+        - gvfs-mtp
+        - gvfs-gphoto2
+        - gvfs-smb
+        - gvfs-nfs
+        - gvfs-fuse
+        - gvfs-archive
+
+        # networking
+        - network-manager-applet
+        - NetworkManager-openvpn
+        - NetworkManager-openvpn-gnome
+        - NetworkManager-openconnect
+        - NetworkManager-openconnect-gnome
+        - bluez
+        - bluez-tools
+        - blueman
+        - firewall-config
+        - NetworkManager-tui
+        - tailscale
       
     remove:
       # example: removing firefox (in favor of the flatpak)
@@ -71,6 +150,7 @@ modules:
       google-fonts:
         - Roboto
         - Open Sans
+        - google-noto-emoji-fonts
 
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
@@ -79,6 +159,12 @@ modules:
       install:
         - org.mozilla.firefox
      # remove:
+
+  - type: systemd
+      system:
+        enabled:
+          - sddm-boot.service
+          - tuned-ppd.service
       
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
