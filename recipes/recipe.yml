@@ -33,15 +33,15 @@ modules:
       - xwayland-satellite
       - NetworkManager-tui
       - papirus-icon-theme
-      - xdg-desktop-portal-gnome
+      - xdg-desktop-portal-hyprland
       - hyprland
       #- hyprlang
-      #- hyprlock
-      #- hyprutils
-      #- hypridle
-      - swayidle
-      - swaylock
-      - swaybg
+      - hyprlock
+      - hyprutils
+      - hypridle
+      #- swayidle
+      #- swaylock
+      #- swaybg
       - hyprland
       - yazi
       - nwg-look
