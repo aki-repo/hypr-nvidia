@@ -16,7 +16,8 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-
+  - from-file: sddm-modules.ymll
+  
   - type: rpm-ostree
     repos:
       - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
@@ -28,15 +29,6 @@ modules:
       - micro
       - starship
       - ghostty
-
-      # SDDM
-      - sddm
-      - sddm-themes
-      - qt5-qtgraphicaleffects
-      - qt5-qtquickcontrols2
-      - qt5-qtsvg
-      - kwallet
-      - pam-kwallet
       
       # WM
       - niri
@@ -162,7 +154,6 @@ modules:
   - type: systemd
     system:
        enabled:
-        - sddm-boot.service
         - tuned-ppd.service
       
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
