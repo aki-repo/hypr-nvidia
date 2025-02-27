@@ -16,7 +16,7 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-  - from-file: ssdm.yml
+  - from-file: modules/sddm.yml
   
   - type: rpm-ostree
     repos:
