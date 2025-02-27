@@ -16,7 +16,6 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-  # - from-file: ../modules/sddm.yml
   
   - type: rpm-ostree
     repos:
@@ -95,10 +94,6 @@ modules:
         - org.mozilla.firefox
      # remove:
 
-  - type: systemd
-    system:
-       enabled:
-        - tuned-ppd.service
       
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
