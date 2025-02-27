@@ -1,12 +1,14 @@
-# niri-ublue (nvidia) &nbsp; [![bluebuild build badge](https://github.com/aki-repo/niri-nvidia/actions/workflows/build.yml/badge.svg)](https://github.com/aki-repo/niri-nvidia/actions/workflows/build.yml)
+# hypr-nvidia 
 
 See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
 
 # about
 
-This is my opinionated ublue build with Niri as a wm. No fluff. Login from cli. Some extra fonts. Ghostty, nu-shell, no stupid bar (I have a watch).
+This is my opinionated ublue build with ~~Niri~~ hyprland as a wm. No fluff. Login from cli. Some extra fonts. Ghostty, nu-shell, no stupid bar (I have a watch).
 nmtui for network. Yazi. Thunar. Tailscale. 
+
+Running x11 apps under Niri was too painful. Keeping it around for now.
 
 Install what else you need via brew/flatpak/rpm-ostree. Fork.
 
@@ -21,7 +23,7 @@ To rebase an existing atomic Fedora installation to the latest build:
 
 - First rebase to the unsigned image, to get the proper signing keys and policies installed:
   ```
-  rpm-ostree rebase ostree-unverified-registry:ghcr.io/aki-repo/niri-ublue:latest
+  rpm-ostree rebase ostree-unverified-registry:ghcr.io/aki-repo/hypr-nvidia:latest
   ```
 - Reboot to complete the rebase:
   ```
@@ -29,7 +31,7 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
 - Then rebase to the signed image, like so:
   ```
-  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/aki-repo/niri-ublue:latest
+  rpm-ostree rebase ostree-image-signed:docker://ghcr.io/aki-repo/hypr-nvidia:latest
   ```
 - Reboot again to complete the installation
   ```
@@ -47,5 +49,5 @@ If build on Fedora Atomic, you can generate an offline ISO with the instructions
 These images are signed with [Sigstore](https://www.sigstore.dev/)'s [cosign](https://github.com/sigstore/cosign). You can verify the signature by downloading the `cosign.pub` file from this repo and running the following command:
 
 ```bash
-cosign verify --key cosign.pub ghcr.io/aki-repo/niri-nvidia
+cosign verify --key cosign.pub ghcr.io/aki-repo/hypr-nvidia
 ```
