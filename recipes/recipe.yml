@@ -6,7 +6,7 @@ name: hypr-nvidia
 description: messing around
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/base-nvidia
+base-image: ghcr.io/ublue-os/sericea-nvidia
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -16,7 +16,7 @@ modules:
     files:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
-  - from-file: ../modules/sddm.yml
+  # - from-file: ../modules/sddm.yml
   
   - type: rpm-ostree
     repos:
@@ -33,11 +33,11 @@ modules:
       # WM
       - niri
       - xwayland-satellite
-      - gnome-themes-extra
-      - gnome-icon-theme
-      - paper-icon-theme
-      - breeze-icon-theme 
-      - papirus-icon-theme
+      #- gnome-themes-extra
+      #- gnome-icon-theme
+      #- paper-icon-theme
+      #- breeze-icon-theme 
+      #- papirus-icon-theme
       - xdg-desktop-portal-hyprland
       - hyprland
       #- hyprlang
@@ -47,7 +47,6 @@ modules:
       #- swayidle
       #- swaylock
       #- swaybg
-      - hyprland
       - yazi
       - nwg-look
       - nu
@@ -56,69 +55,14 @@ modules:
       # display
       - wlr-randr
       - wlsunset
-      - light
-      - kanshi
+      #- light
+      #- kanshi
       
       # screenshot
       - slurp
       - grim
-        
-      # environment
-      - fzf
-      - tuned-ppd
-      - xorg-x11-server-Xwayland
-      - headsetcontrol
-      - mediainfo
-      - polkit
-      - xfce-polkit 
-      - fprintd-pam
-      - dbus-tools
-      - dbus-daemon
-      - wl-clipboard
-      - pavucontrol
-      - playerctl
-      - qt5-qtwayland
-      - qt6-qtwayland
-      - vulkan-validation-layers
-      - vulkan-tools
-      - gnome-disk-utility
-      - ddcutil
-      - openssl
-      - vim
-      - just
-      - alsa-firmware
-
-        
-      # sound
-      - wireplumber
-      - pipewire
-      - pamixer
-      - pulseaudio-utils
-
-      # file manager
-      - thunar
-      - thunar-archive-plugin 
-      - thunar-volman
-      - xarchiver
-      - imv
-      - p7zip
-      - gvfs-mtp
-      - gvfs-gphoto2
-      - gvfs-smb
-      - gvfs-nfs
-      - gvfs-fuse
-      - gvfs-archive
 
       # networking
-      - network-manager-applet
-      - NetworkManager-openvpn
-      - NetworkManager-openvpn-gnome
-      - NetworkManager-openconnect
-      - NetworkManager-openconnect-gnome
-      - bluez
-      - bluez-tools
-      - blueman
-      - firewall-config
       - NetworkManager-tui
       - tailscale
       
