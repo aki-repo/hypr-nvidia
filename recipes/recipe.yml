@@ -160,10 +160,10 @@ modules:
      # remove:
 
   - type: systemd
-      system:
-        enabled:
-          - sddm-boot.service
-          - tuned-ppd.service
+    system:
+       enabled:
+        - sddm-boot.service
+        - tuned-ppd.service
       
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
