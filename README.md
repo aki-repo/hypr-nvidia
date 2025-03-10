@@ -8,7 +8,6 @@ See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup i
 This is my opinionated ublue build with ~~Niri~~ hyprland as a wm. No fluff. sddm added. Some extra fonts. Ghostty, nu-shell, no stupid bar (I have a watch).
 nmtui for network. Yazi. Thunar. Tailscale. 
 
-Running x11 apps under Niri was too painful. Keeping it around for now.
 
 Install what else you need via brew/flatpak/rpm-ostree. Fork.
 
