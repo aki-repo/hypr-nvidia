@@ -14,8 +14,6 @@ environment {
 hotkey-overlay {
     skip-at-startup
 }
-
-screenshot-path "~/w/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
   
 input {
     keyboard {
