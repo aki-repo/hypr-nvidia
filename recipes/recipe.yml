@@ -55,6 +55,8 @@ modules:
       - nwg-look
       - nu
       - waypaper
+      - librewolf
+      - zen-browser
 
       # display
       - wlr-randr
