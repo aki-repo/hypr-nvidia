@@ -24,6 +24,8 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/errornointernet/packages/repo/fedora-%OS_VERSION%/errornointernet-packages-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-%OS_VERSION%/solopasha-hyprland-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/pgdev/ghostty/repo/fedora-%OS_VERSION%/pgdev-ghostty-fedora-%OS_VERSION%.repo
+      - https://repo.librewolf.net/librewolf.repo
+      - https://copr.fedorainfracloud.org/coprs/sneexy/zen-browser/repo/fedora-%OS_VERSION%/sneexy-zen-browser.repo
     install:
       - micro
       - starship
@@ -97,10 +99,10 @@ modules:
         - org.mozilla.firefox
      # remove:
 
-   - type: systemd
-     system:
-        enabled:
-          - tune-ppd.service  # this enables tune-ppd
+  - type: systemd
+    system:
+      enabled:
+        - tune-ppd.service  # this enables tune-ppd
       
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
