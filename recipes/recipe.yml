@@ -32,7 +32,7 @@ modules:
       - ghostty
 
       # power
-      - tune-ppd
+      - tuned-ppd
       
       # WM
       - niri
@@ -41,7 +41,7 @@ modules:
       #- gnome-icon-theme
       #- paper-icon-theme
       #- breeze-icon-theme 
-      #- papirus-icon-theme
+      - papirus-icon-theme
       - xdg-desktop-portal-hyprland
       - hyprland
       #- hyprlang
