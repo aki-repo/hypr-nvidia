@@ -98,9 +98,9 @@ modules:
      # remove:
 
    - type: systemd
-    system:
-      enabled:
-      - tune-ppd.service  # this enables tune-ppd
+      system:
+        enabled:
+        - tune-ppd.service  # this enables tune-ppd
       
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
