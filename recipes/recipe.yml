@@ -42,7 +42,8 @@ modules:
       #- paper-icon-theme
       #- breeze-icon-theme 
       - papirus-icon-theme
-      - xdg-desktop-portal-hyprland
+      - xdg-desktop-portal-gnome # needed for niri screencasting
+      - gnome-keyring
       - hyprland
       #- hyprlang
       - hyprlock
