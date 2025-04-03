@@ -6,7 +6,7 @@ name: hypr-nvidia
 description: messing around
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/sway-atomic-nvidia
+base-image: ghcr.io/ublue-os/sway-atomic
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
